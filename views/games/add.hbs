@@ -1,0 +1,35 @@
+<h3>WishList game</h3>
+<div class="row">
+    <form action="/games" method="POST" class="col s12">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="title" name="title">
+                <label for="title">Title</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="genre" name="genre">
+                <label for="genre">Genre</label>
+            </div>
+        </div>
+        {{!-- <div class="row">
+            <div class="input-field">
+                <input type="text" id="releaseDate" name="releaseDate">
+                <label for="releaseDate">Release Date</label>
+            </div>
+        </div> --}}
+        <div class="row">
+            <label for="releaseDate">Release Date</label>
+            <input type="date" id="releaseDate" name="releaseDate"value="2023-01-22">   
+        </div>
+        <div class="row">
+            <input type="submit" value="Save" class="btn" onclick="fetchBoxArt()">
+            <script>function fetchBoxArt(){
+                    
+                }
+            </script>
+            <a href="/dashboard" class="btn orange">Cancel</a>
+        </div>
+    </form>
+</div>
